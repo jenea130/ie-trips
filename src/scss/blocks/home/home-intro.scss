@@ -1,4 +1,51 @@
 .home-intro {
-  &__title{}
+  position: relative;
+  height: 119.4rem;
+  // height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 22, 39, 0) 0%,
+    #011627 76.64%,
+    #011627 100%
+  );
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 29.5rem;
+    max-width: 62rem;
+    text-align: center;
+    z-index: 2;
+  }
+  &__title {
+    margin-bottom: 1.4rem;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 12rem;
+    letter-spacing: -0.02em;
+  }
+  &__subtitle {
+    margin-bottom: 5rem;
+    font-family: var(--font-1);
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: "Larsseit", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+  }
 }
-

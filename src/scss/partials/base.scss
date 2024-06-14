@@ -22,8 +22,9 @@ body {
   margin: 0;
   font-family: var(--font-1);
   font-size: 1.8rem;
-  color: var(--text-color);
-  background: white;
+  color: var(--text-primary);
+  background: #011627;
+    
 
   &::after {
     content: "";
@@ -85,7 +86,7 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1400px;
+  max-width: 1450px;
 }
 
 input[type="submit"]:disabled {
