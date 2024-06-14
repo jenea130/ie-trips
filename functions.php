@@ -4,7 +4,7 @@
 if (!defined('ABSPATH'))
     exit;
 
-$vite_dev = false;
+$vite_dev = true;
 
 define('IS_VITE_DEVELOPMENT', $vite_dev);
 

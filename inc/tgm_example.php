@@ -17,12 +17,12 @@ add_action('tgmpa_register', 'bsv_eccommerce_register_required_plugins');
 function bsv_eccommerce_register_required_plugins()
 {
   $plugins = array(
-    /* array( */
-    /*   'name' => 'Safe SVG', */
-    /*   'slug' => 'safe-svg', */
-    /*   'required' => true, */
-    /*   'force_activation' => true */
-    /* ), */
+    array( 
+      'name' => 'Safe SVG', 
+      'slug' => 'safe-svg',
+      'required' => true, 
+      'force_activation' => true 
+    ), 
     /* /1* array( *1/ */
     /* /1*   'name' => 'Wpglobus', *1/ */
     /* /1*   'slug' => 'wpglobus', *1/ */
@@ -59,20 +59,20 @@ function bsv_eccommerce_register_required_plugins()
     /* /1*     'required' => true, *1/ */
     /* /1*     'external_url' => 'http://vps5.bludelego.com/plugins/advanced-bulk-edit-v1.3.zip' *1/ */
     /* /1* ), *1/ */
-    /* array( */
-    /*   'name' => 'All-in-One WP Migration', */
-    /*   'slug' => 'all-in-one-wp-migration', */
-    /*   'source' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip', */
-    /*   'required' => true, */
-    /*   'external_url' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip' */
-    /* ), */
-    /* array( */
-    /*   'name' => 'Advanced custom fields', */
-    /*   'slug' => 'advanced-custom-fields', */
-    /*   'source' => 'http://vps5.bludelego.com/plugins/advanced-custom-fields-pro-6_0_6.zip', */
-    /*   'required' => true, */
-    /*   'external_url' => 'http://vps5.bludelego.com/plugins/advanced-custom-fields-pro-6_0_6.zip' */
-    /* ), */
+    array( 
+      'name' => 'All-in-One WP Migration', 
+      'slug' => 'all-in-one-wp-migration', 
+      'source' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip', 
+      'required' => true, 
+      'external_url' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip' 
+    ), 
+    array( 
+      'name' => 'Advanced custom fields', 
+      'slug' => 'advanced-custom-fields', 
+      'source' => 'http://vps5.bludelego.com/plugins/advanced-custom-fields-pro-6_0_6.zip', 
+      'required' => true, 
+      'external_url' => 'http://vps5.bludelego.com/plugins/advanced-custom-fields-pro-6_0_6.zip' 
+    ), 
     /* // array( */
     /* //   'name'             => 'PDF Flipbook', */
     /* //   'slug'             => '3d-flipbook-dflip-lite', */
@@ -89,12 +89,12 @@ function bsv_eccommerce_register_required_plugins()
     /* //   'name'             => 'AddToAny Share Buttons', */
     /* //   'slug'             => 'add-to-any', */
     /* // ), */
-    /* array( */
-    /*   'name' => 'Tiny Mc Advanced', */
-    /*   'slug' => 'tinymce-advanced', */
-    /*   'required' => true, */
-    /*   'force_activation' => true */
-    /* ), */
+    array( 
+      'name' => 'Tiny Mc Advanced', 
+      'slug' => 'tinymce-advanced', 
+      'required' => true, 
+      'force_activation' => true 
+    ), 
     /* //    array( */
     /* //      'name'             => 'WP-PageNavi', */
     /* //      'slug'             => 'wp-pagenavi', */
@@ -111,18 +111,18 @@ function bsv_eccommerce_register_required_plugins()
     /* //			'required'         => true, */
     /* //			'force_activation' => true */
     /* //		), */
-    /* array( */
-    /*   'name' => 'Classic Editor', */
-    /*   'slug' => 'classic-editor', */
-    /*   'required' => true, */
-    /*   'force_activation' => true */
-    /* ), */
-    /* array( */
-    /*   'name' => 'Easy Updates Manager', */
-    /*   'slug' => 'stops-core-theme-and-plugin-updates', */
-    /*   'required' => true, */
-    /*   'force_activation' => true */
-    /* ), */
+    array( 
+      'name' => 'Classic Editor', 
+      'slug' => 'classic-editor', 
+      'required' => true, 
+      'force_activation' => true 
+    ), 
+    array( 
+      'name' => 'Easy Updates Manager', 
+      'slug' => 'stops-core-theme-and-plugin-updates', 
+      'required' => true, 
+      'force_activation' => true 
+    ), 
     /* //    array( */
     /* //      'name'             => 'Post Duplicator', */
     /* //      'slug'             => 'post-duplicator', */
@@ -151,12 +151,12 @@ function bsv_eccommerce_register_required_plugins()
     /* //			'name'             => 'Easy Auto SKU Generator', */
     /* //			'slug'             => 'easy-woocommerce-auto-sku-generator' */
     /* //		), */
-    /* //		array( */
-    /* //			'name'             => 'Query Monitor', */
-    /* //			'slug'             => 'query-monitor', */
-    /* //			'required'         => true, */
-    /* //			'force_activation' => true */
-    /* //		), */
+    array( 
+    	'name'             => 'Query Monitor', 
+    	'slug'             => 'query-monitor', 
+    	'required'         => true, 
+    	'force_activation' => true 
+    ), 
     /* //		array( */
     /* //			'name'             => 'Cookie Notice', */
     /* //			'slug'             => 'cookie-notice' */
