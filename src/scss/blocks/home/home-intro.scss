@@ -26,13 +26,21 @@
     object-fit: cover;
     z-index: 1;
   }
+  .container {
+    height: inherit;
+  }
+  &__body {
+    position: relative;
+    height: inherit;
+    z-index: 2;
+  }
   &__content {
     position: relative;
     margin: 0 auto;
     padding-top: 29.5rem;
     max-width: 62rem;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
   }
   &__title {
     margin-bottom: 1.4rem;
@@ -50,11 +58,48 @@
     text-transform: uppercase;
   }
   &__text {
-    font-family: "Larsseit", sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 1.5;
     text-align: center;
-    color: #fff;
+  }
+  &__scroll {
+    position: absolute;
+    display: inline-block;
+    bottom: 28%;
+    left: -2%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    z-index: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -150%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8rem;
+      height: 2px;
+      background: #00c9e0;
+    }
+  }
+  &__socials {
+    position: absolute;
+    bottom: 19%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    z-index: 3;
+    svg {
+      transition: all 0.3s ease;
+    }
+    a:hover svg {
+      transform: scale(1.2);
+    }
   }
 }

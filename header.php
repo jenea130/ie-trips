@@ -26,7 +26,7 @@
           <button class="search" type="button">
             <?php echo $button_search ?>
           </button>
-          <button class="main-header__btn" type="button"><?php echo $button_text ?></button>
+          <button class="main-header__btn btn" type="button"><?php echo $button_text ?></button>
         </div>
       </div>
     </header>
