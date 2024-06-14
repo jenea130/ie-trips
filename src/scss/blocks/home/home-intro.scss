@@ -2,12 +2,21 @@
   position: relative;
   height: 119.4rem;
   // height: 100vh;
-  background: linear-gradient(
-    180deg,
-    rgba(1, 22, 39, 0) 0%,
-    #011627 76.64%,
-    #011627 100%
-  );
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(1, 22, 39, 0) 0%,
+      #011627 76.64%,
+      #011627 100%
+    );
+  }
   img {
     position: absolute;
     top: 0;
