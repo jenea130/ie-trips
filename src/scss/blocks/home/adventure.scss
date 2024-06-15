@@ -1,0 +1,54 @@
+.adventure {
+  &__header {
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-bottom: 5.3rem;
+    display: flex;
+    align-items: center;
+    column-gap: 3.3rem;
+  }
+  &__close {
+    height: 2.4rem;
+    svg {
+      display: block;
+    }
+  }
+  &__text {
+    max-width: 36rem;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+  &__tabs {
+    display: flex;
+    max-width: 120rem;
+    margin: 0 auto 15rem;
+  }
+  &__tab {
+    flex: 1;
+    padding: 3.3rem 2rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #41ead4;
+    border-bottom: 1px solid #41ead4;
+    cursor: pointer;
+    &.active {
+      border-bottom-width: 3px;
+    }
+  }
+  &__item {
+    display: none;
+    opacity: 0;
+    padding: 5rem;
+  transition: all 0.3s ease;
+    &.active {
+      display: block;
+    }
+    &.show {
+      opacity: 1;
+    }
+  }
+}

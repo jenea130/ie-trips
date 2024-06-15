@@ -28,5 +28,6 @@
           </button>
           <button class="main-header__btn btn" type="button"><?php echo $button_text ?></button>
         </div>
+        
       </div>
     </header>
