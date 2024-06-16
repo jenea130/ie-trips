@@ -1,40 +1,42 @@
 jQuery(document).ready(function ($) {
-  $('.gallery__wrap').slick({
-    slidesToShow: 4,
+  $('.adventure__img').slick({
+    slidesToShow: 1,
+    arrows: false,
     autoplay: true,
-    variableWidth: true,
+    // variableWidth: true,
     slidesToScroll: 1,
+    // dots: true,
     infinite: true,
-    arrows: true,
-    speed: 500,
-    useTransform: true,
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true
-        }
-      }
+    // arrows: false,
+    // speed: 500,
+    // useTransform: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 1400,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       adaptiveHeight: true
+    //     }
+    //   }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
-    ]
+    // ]
   });
 
 

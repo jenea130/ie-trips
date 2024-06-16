@@ -17,46 +17,48 @@ $items = $adventure['items'];
     <div class="adventure__tabs">
       <?php foreach ($items as $item) : ?>
         <?php
-        $tab = $item['tabs'];
+        $tab = $item['tab'];
         ?>
         <div class="adventure__tab"><?php echo $tab ?></div>
       <?php endforeach; ?>
     </div>
     <div class="adventure__content">
-      <div class="adventure__item">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-      </div>
-      <div class="adventure__item">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis similique non repellendus error voluptatem, omnis fuga dicta nihil aliquid. Dicta.</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-      </div>
-      <div class="adventure__item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-      </div>
-      <div class="adventure__item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ut!
-      </div>
+      <?php foreach ($items as $item) : ?>
+        <?php
+        $title = $item['title'];
+        $text = $item['text'];
+        $gallery = $item['gallery'];
+        ?>
+
+        <div class="adventure__item">
+          <div class="adventure__flex">
+            <div class="one">
+              <div class="adventure__img">
+                <?php foreach ($gallery as $item) : ?>
+                  <?php
+                  $image = $item;
+                  ?>
+                  <img src="<?php echo $image ?>" alt="">
+                <?php endforeach; ?>
+              </div>
+              <div class="adventure__arrows">
+                <div class="adventure__arrow">
+                  <?php get_template_part('template-parts/icons/icon-arrow'); ?>
+                </div>
+                <div class="adventure__arrow">
+                  <?php get_template_part('template-parts/icons/icon-arrow-right'); ?>
+                </div>
+              </div>
+            </div>
+            <div class="adventure__body">
+              <h3 class="adventure__subtitle"><?php echo $title ?></h3>
+              <?php echo $text ?>
+            </div>
+          </div>
+          <div class="adventure__dotted">
+            <?php get_template_part('template-parts/icons/fon-adventure'); ?>
+          </div>
+        </div>
+      <?php endforeach; ?>
     </div>
   </div>
-</div>
