@@ -125,9 +125,13 @@
     height: 6.5rem;
     background: #011627;
     cursor: pointer;
+    &:hover svg {
+      transform: scale(1.2);
+    }
     svg {
       height: 2.4rem;
       width: 2.4rem;
+      transition: all .3s ease;
     }
   }
   &__arrow--prev {
@@ -136,8 +140,6 @@
   }
   &__arrow--next {
     border-left: 1px solid rgba(19, 49, 73, 0.5);
-    svg {
-    }
   }
   &__dotted {
     position: absolute;

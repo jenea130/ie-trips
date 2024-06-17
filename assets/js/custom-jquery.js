@@ -7,6 +7,7 @@ jQuery(document).ready(function ($) {
     slider.slick({
       slidesToShow: 1,
       arrows: false,
+      waitForAnimate: false,
       // autoplay: true,
       // variableWidth: true,
       slidesToScroll: 1,
