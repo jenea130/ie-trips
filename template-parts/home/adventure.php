@@ -39,7 +39,7 @@ $socials = $home_intro['items'];
               <div class="adventure__img">
                 <?php foreach ($gallery as $item) : ?>
                   <?php
-                  $image = $item;
+                  $image = $item['image'];
                   ?>
                   <img src="<?php echo $image ?>" alt="">
                 <?php endforeach; ?>
