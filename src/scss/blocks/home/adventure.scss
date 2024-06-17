@@ -96,6 +96,9 @@
   p:not(:last-child) {
     margin-bottom: 4rem;
   }
+  &__btn {
+    margin-top: 4.5rem;
+  }
   &__arrows {
     display: flex;
     position: absolute;

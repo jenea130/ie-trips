@@ -3,6 +3,7 @@ $adventure = get_field('adventure');
 $title = $adventure['title'];
 $text = $adventure['text'];
 $items = $adventure['items'];
+$button_text = $adventure['button_text'];
 ?>
 
 <div class="adventure">
@@ -53,6 +54,9 @@ $items = $adventure['items'];
             <div class="adventure__body">
               <h3 class="adventure__subtitle"><?php echo $title ?></h3>
               <?php echo $text ?>
+              <a href="#" class="btn adventure__btn">
+<?php echo $button_text ?>
+              </a>
             </div>
           </div>
           <div class="adventure__dotted">
