@@ -60,7 +60,7 @@ $socials = $home_intro['items'];
             </div>
           </div>
           <div class="adventure__dotted">
-            <?php get_template_part('template-parts/icons/fon-adventure'); ?>
+            <?php get_template_part('template-parts/icons/dotted-adventure'); ?>
           </div>
           <div class="adventure__socials socials">
             <h4 class="socials__label">Share it:</h4>
@@ -80,3 +80,7 @@ $socials = $home_intro['items'];
       <?php endforeach; ?>
     </div>
   </div>
+  <div class="fon">
+    <?php get_template_part('template-parts/icons/fon-2'); ?>
+  </div>
+</div>

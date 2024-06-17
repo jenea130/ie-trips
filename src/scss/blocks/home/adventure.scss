@@ -1,4 +1,16 @@
 .adventure {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100rem;
+  .fon {
+    position: absolute;
+    top: -14rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
   &__header {
     max-width: 120rem;
     margin: 0 auto;
@@ -119,12 +131,11 @@
       width: 2.4rem;
     }
   }
-  &__arrow:first-child {
+  &__arrow--prev {
     border-radius: 8px 0 0 0;
     border-right: 1px solid rgba(19, 49, 73, 0.5);
-    background: kk;
   }
-  &__arrow:last-child {
+  &__arrow--next {
     border-left: 1px solid rgba(19, 49, 73, 0.5);
     svg {
     }
