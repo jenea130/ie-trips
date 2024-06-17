@@ -60,7 +60,7 @@
     max-width: 120rem;
     margin: 0 auto;
   }
-  .one {
+  &__wrap {
     position: relative;
     flex: 0 0 41%;
     height: 60.7rem;
@@ -135,5 +135,10 @@
     left: 5.6rem;
     height: 23rem;
     z-index: -1;
+  }
+  &__socials {
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
   }
 }
