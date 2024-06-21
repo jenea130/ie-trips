@@ -1,53 +1,91 @@
 jQuery(document).ready(function ($) {
-  const slider = $(".adventure__img");
-  if (slider) {
-    adventureSlider();
+  const nav_tabs = document.querySelector(".adventure__tabs");
+
+  if (nav_tabs) {
+    tabs();
   }
-  function adventureSlider() {
+
+  function tabs() {
+    const nav_tabs = $(".adventure__tab");
+    const item_tabs = $(".adventure__item");
+
+    showFirst();
+
+    nav_tabs.each(function (index) {
+      $(this).on("click", () => {
+        resetActive();
+        resetSliders();
+        $(this).addClass("active");
+        item_tabs.eq(index).addClass("active");
+        setTimeout(() => {
+          item_tabs.eq(index).addClass("show");
+          setTimeout(() => {
+            const slider = item_tabs.eq(index).find(".adventure__img");
+            const item_tabs_check =
+              document.querySelectorAll(".adventure__item");
+            const slider_check =
+              item_tabs_check[index].querySelector(".adventure__img");
+            if (slider_check) {
+              adventureSlider(slider);
+            }
+          }, 500);
+        }, 200);
+      });
+    });
+
+    function showFirst() {
+      nav_tabs.eq(0).addClass("active");
+      nav_tabs.eq(0).addClass("show");
+      item_tabs.eq(0).addClass("active");
+      item_tabs.eq(0).addClass("show");
+      const slider = item_tabs.eq(0).find(".adventure__img");
+      adventureSlider(slider);
+    }
+
+    function resetActive() {
+      nav_tabs.each(function () {
+        $(this).removeClass("active");
+      });
+      item_tabs.each(function () {
+        $(this).removeClass("active");
+      });
+      item_tabs.each(function () {
+        $(this).removeClass("show");
+      });
+    }
+  }
+
+  function resetSliders() {
+    const sliders = $(".adventure__img");
+    sliders.each(function () {
+      if ($(this).hasClass("slick-initialize")) {
+        $(this).slick("unslick");
+      }
+    });
+  }
+
+  function adventureSlider(slider) {
+    // console.log(slider);
+
     slider.slick({
       slidesToShow: 1,
       arrows: false,
-      waitForAnimate: false,
-      // autoplay: true,
-      // variableWidth: true,
+      waitForAnimate: true,
       slidesToScroll: 1,
-      // dots: true,
       infinite: true,
-      // arrows: false,
-      // speed: 500,
-      // useTransform: true,
-      // responsive: [
-      //   {
-      //     breakpoint: 1400,
-      //     settings: {
-      //       slidesToShow: 3,
-      //       slidesToScroll: 3
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 1200,
-      //     settings: {
-      //       slidesToShow: 2,
-      //       slidesToScroll: 2
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 768,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1,
-      //       adaptiveHeight: true
-      //     }
-      //   }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-      // ]
+      speed: 500,
     });
 
-    const adventure__arrow_prev = $(".adventure__arrow--prev");
-    const adventure__arrow_next = $(".adventure__arrow--next");
+    const adventure__arrow_prev = slider
+      .closest(".adventure__wrap")
+      .find(".adventure__arrow--prev");
+    // console.log(adventure__arrow_prev);
+
+    const adventure__arrow_next = slider
+      .closest(".adventure__wrap")
+      .find(".adventure__arrow--next");
     adventure__arrow_prev.on("click", function () {
+      console.log(slider);
       slider.slick("slickPrev");
     });
     adventure__arrow_next.on("click", function () {

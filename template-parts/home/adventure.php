@@ -80,7 +80,4 @@ $socials = $home_intro['items'];
       <?php endforeach; ?>
     </div>
   </div>
-  <div class="fon">
-    <?php get_template_part('template-parts/icons/fon-2'); ?>
-  </div>
 </div>
