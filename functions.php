@@ -9,7 +9,7 @@ $vite_dev = true;
 define('IS_VITE_DEVELOPMENT', $vite_dev);
 
 include "inc/inc.vite.php";
-require_once __DIR__ . '/src/vue/vue-functions.php';
+// require_once __DIR__ . '/src/vue/vue-functions.php';
 
 require_once __DIR__ . '/Api/call-api.php';
 require_once __DIR__ . '/Api/single-immobile-meta.php';

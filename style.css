@@ -59,5 +59,8 @@ Version: 0.4
 }
 
 .slick-prev::before {
-  /* background: url("assets/i/svg/") */
+  background: url("assets/i/svg/arrow-prev.svg");
+}
+.slick-next::before {
+  background: url("assets/i/svg/arrow-next.svg");
 }
