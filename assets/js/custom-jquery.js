@@ -65,11 +65,10 @@ jQuery(document).ready(function ($) {
   }
 
   function adventureSlider(slider) {
-    // console.log(slider);
 
     slider.slick({
       slidesToShow: 1,
-      arrows: false,
+      arrows: true,
       waitForAnimate: true,
       slidesToScroll: 1,
       infinite: true,
@@ -79,13 +78,11 @@ jQuery(document).ready(function ($) {
     const adventure__arrow_prev = slider
       .closest(".adventure__wrap")
       .find(".adventure__arrow--prev");
-    // console.log(adventure__arrow_prev);
 
     const adventure__arrow_next = slider
       .closest(".adventure__wrap")
       .find(".adventure__arrow--next");
     adventure__arrow_prev.on("click", function () {
-      console.log(slider);
       slider.slick("slickPrev");
     });
     adventure__arrow_next.on("click", function () {

@@ -15,4 +15,5 @@ $background = $fon['background'];
   <?php get_template_part('template-parts/home/adventure'); ?>
 </div>
 
+
 <?php get_footer(); ?>
