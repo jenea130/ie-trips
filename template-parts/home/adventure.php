@@ -41,7 +41,9 @@ $socials = $home_intro['items'];
                   <?php
                   $image = $item['image'];
                   ?>
-                  <img src="<?php echo $image ?>" alt="">
+                  <div class="one">
+                    <img src="<?php echo $image ?>" alt="">
+                  </div>
                 <?php endforeach; ?>
               </div>
               <div class="adventure__arrows">

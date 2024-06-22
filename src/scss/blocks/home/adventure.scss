@@ -2,12 +2,12 @@
   position: relative;
   z-index: 2;
   &__header {
-    max-width: 120rem;
     margin: 0 auto;
     margin-bottom: 5.3rem;
     display: flex;
     align-items: center;
     column-gap: 3.3rem;
+    max-width: 120rem;
   }
   &__close {
     height: 2.4rem;
@@ -23,8 +23,8 @@
   }
   &__tabs {
     display: flex;
-    max-width: 120rem;
     margin: 0 auto 15rem;
+    max-width: 120rem;
   }
   &__tab {
     flex: 1;
@@ -64,15 +64,28 @@
   &__wrap {
     position: relative;
     // flex: 0 0 41%;
-    flex: 0 0 48.3rem;
+    flex: 0 0 48rem;
     height: 60.7rem;
     z-index: 1;
     overflow: hidden;
     border-radius: 8px;
-    min-width: 0;
   }
   &__img {
-    height: inherit;
+    // height: inherit;
+  }
+  .one {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20rem;
+      left: -8rem;
+      width: 20rem;
+      height: 80px;
+      background: red;
+      z-index: 2;
+    }
   }
   &__body {
     flex: 0 0 38%;
