@@ -20,9 +20,13 @@ $button_text = $about['button_text'];
       <?php foreach ($items as $item) : ?>
         <?php
         $image = $item['image'];
+        $title = $item['title'];
         ?>
         <div class="about__img">
           <img src="<?php echo $image ?>" alt="">
+          <a href="#!" class="about__name">
+            <?php echo $title ?>
+          </a>
         </div>
       <?php endforeach; ?>
     </div>
