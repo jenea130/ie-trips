@@ -1,0 +1,62 @@
+.about {
+  padding-top: 10.7rem;
+  position: relative;
+  z-index: 2;
+  &__wrap {
+    position: relative;
+    display: flex;
+    column-gap: 8.8rem;
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+  &__dotted {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8rem;
+  }
+
+  &__content {
+    flex: 1;
+  }
+  &__title {
+    margin-bottom: 2.2rem;
+  }
+
+  &__btn {
+    margin-top: 3.8rem;
+  }
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+  }
+  &__img {
+    flex: 0 0 50%;
+    position: relative;
+    padding-bottom: 50%;
+    cursor: pointer;
+    z-index: 1;
+    &:hover::before {
+      background: none;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(12, 12, 12, 0.7);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+  }
+}

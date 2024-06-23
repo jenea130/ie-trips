@@ -1,0 +1,20 @@
+.text {
+  p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    strong {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}

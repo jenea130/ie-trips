@@ -12,7 +12,10 @@ $background = $fon['background'];
 <?php get_template_part('template-parts/home/home-intro'); ?>
 <div class="fon">
   <img class="fon__img" src="<?php echo $background ?>" alt="">
-  <?php get_template_part('template-parts/home/adventure'); ?>
+  <div class="container">
+    <?php get_template_part('template-parts/home/adventure'); ?>
+    <?php get_template_part('template-parts/home/about'); ?>
+  </div>
 </div>
 
 
