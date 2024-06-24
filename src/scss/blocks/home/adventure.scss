@@ -3,6 +3,9 @@
   padding-bottom: 24.5rem;
   position: relative;
   z-index: 2;
+  @media screen and (max-width: 576px) {
+    padding-bottom: 16rem;
+  }
   &__header {
     margin: 0 auto;
     margin-bottom: 5.3rem;
@@ -10,11 +13,26 @@
     align-items: center;
     column-gap: 3.3rem;
     max-width: 120rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-bottom: 4rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 6rem;
+  }
+  &__title {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 2rem;
+    }
   }
   &__close {
     height: 2.4rem;
     svg {
       display: block;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
   &__text {
@@ -22,11 +40,24 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fff;
+    @media screen and (max-width: 576px) {
+      max-width: initial;
+    }
   }
   &__tabs {
     display: flex;
     margin: 0 auto 15rem;
     max-width: 120rem;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 9rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 7rem;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 5rem;
+      flex-wrap: wrap;
+    }
   }
   &__tab {
     flex: 1;
@@ -42,6 +73,9 @@
     &.active {
       border-bottom-width: 3px;
     }
+    @media screen and (max-width: 576px) {
+      flex: 0 0 50%;
+    }
   }
   &__item {
     position: relative;
@@ -56,25 +90,55 @@
     &.show {
       opacity: 1;
     }
+    @media screen and (max-width: 576px) {
+    padding: 1rem;
+    }
   }
   &__flex {
     display: flex;
     column-gap: 12.6rem;
     max-width: 120rem;
     margin: 0 auto;
+    @media screen and (max-width: 992px) {
+      column-gap: 7rem;
+    }
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      max-width: initial;
+    }
+    @media screen and (max-width: 576px) {
+      gap: 4rem;
+    }
   }
   &__wrap {
     position: relative;
-    // flex: 0 0 41%;
     flex: 0 0 48rem;
     height: 60.7rem;
     z-index: 1;
     overflow: hidden;
     border-radius: 8px;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 44rem;
+    }
+    @media screen and (max-width: 576px) {
+      flex: 0 0 100%;
+      height: auto;
+    }
   }
   &__body {
     flex: 0 0 38%;
     margin-top: 5.6rem;
+    @media screen and (max-width: 992px) {
+      margin-top: 3rem;
+      flex: 0 0 46%;
+      padding-right: 3rem;
+    }
+    @media screen and (max-width: 768px) {
+      flex: 0 0 100%;
+    }
+    @media screen and (max-width: 576px) {
+      padding-right: 0;
+    }
   }
   &__subtitle {
     margin-bottom: 3.4rem;
@@ -84,6 +148,15 @@
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: #fff;
+    @media screen and (max-width: 992px) {
+      font-size: 5.8rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 5.2rem;
+    }
+    @media screen and (max-width: 576px) {
+    font-size: 4.4rem;
+    }
   }
   &__btn {
     margin-top: 4.5rem;
@@ -94,11 +167,29 @@
     left: 5.6rem;
     height: 23rem;
     z-index: -1;
+    @media screen and (max-width: 1200px) {
+      bottom: 4rem;
+    }
+    @media screen and (max-width: 992px) {
+      bottom: 9rem;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   &__socials {
     position: absolute;
     bottom: 5rem;
     right: 1rem;
+    @media screen and (max-width: 1100px) {
+      bottom: -3rem;
+    }
+    @media screen and (max-width: 768px) {
+      bottom: 5%;
+    }
+    @media screen and (max-width: 576px) {
+      bottom: -10%;
+    }
   }
   .slick-prev,
   .slick-next {

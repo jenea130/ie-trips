@@ -5,4 +5,13 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--text-primary);
+  @media screen and (max-width: 992px) {
+    font-size: 6.6rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 5.4rem;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 4.6rem;
+  }
 }
