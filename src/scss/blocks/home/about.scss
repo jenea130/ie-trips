@@ -3,22 +3,34 @@
   padding-bottom: 25rem;
   position: relative;
   z-index: 2;
+  @media screen and (max-width: 992px) {
+    padding-top: 8rem;
+  }
   &__wrap {
     position: relative;
     display: flex;
     column-gap: 8.8rem;
     margin: 0 auto;
     max-width: 120rem;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__dotted {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: -8rem;
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
   }
 
   &__content {
     flex: 1;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 7rem;
+    }
   }
   &__title {
     margin-bottom: 2.2rem;
@@ -31,6 +43,14 @@
     display: flex;
     flex-wrap: wrap;
     flex: 2;
+    @media screen and (max-width: 992px) {
+      max-width: 86%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 576px) {
+      margin: 0;
+      margin-left: auto;
+    }
   }
   &__img {
     flex: 0 0 50%;
@@ -38,6 +58,10 @@
     padding-bottom: 50%;
     cursor: pointer;
     z-index: 1;
+    @media screen and (max-width: 576px) {
+      flex: 0 0 100%;
+      padding-bottom: 100%;
+    }
     &:hover::before {
       background: none;
     }
@@ -78,11 +102,15 @@
     border-radius: 0.8rem;
     background: #fff;
     box-shadow: 5px 15px 40px 0 rgba(0, 201, 224, 0.2);
-    transition: opacity .5s ease;
+    transition: opacity 0.5s ease;
     z-index: 2;
     opacity: 0;
     strong {
       color: #00c9e0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 1.8rem 1.6rem;
+      font-size: 1.3rem;
     }
   }
 }
