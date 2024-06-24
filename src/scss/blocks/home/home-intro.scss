@@ -1,7 +1,9 @@
 .home-intro {
   position: relative;
   height: 119.4rem;
-  // height: 100vh;
+  @media screen and (max-width: 576px) {
+  height: 94rem;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -41,6 +43,9 @@
     max-width: 62rem;
     text-align: center;
     z-index: 3;
+    @media screen and (max-width: 576px) {
+    padding-top: 24rem;
+    }
   }
   &__title {
     margin-bottom: 1.4rem;
@@ -48,11 +53,17 @@
     font-weight: 700;
     font-size: 12rem;
     letter-spacing: -0.02em;
+    @media screen and (max-width: 1200px) {
+   font-size: 10rem; 
+    }
+    @media screen and (max-width: 992px) {
+   font-size: 9rem; 
+    }
     @media screen and (max-width: 768px) {
-      font-size: 10rem;
+      font-size: 8rem;
     }
     @media screen and (max-width: 576px) {
-      font-size: 8rem;
+      font-size: 6rem;
     }
   }
   &__subtitle {
@@ -62,12 +73,18 @@
     font-size: 1.8rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    @media screen and (max-width: 576px) {
+    font-size: 1.6rem;
+    }
   }
   &__text {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 1.5;
     text-align: center;
+    @media screen and (max-width: 576px) {
+    // font-size: 1,6rem;
+    }
   }
   &__scroll {
     position: absolute;

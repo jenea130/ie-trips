@@ -6,6 +6,12 @@
   padding-top: 7.5rem;
   background: transparent;
   z-index: 3;
+  @media screen and (max-width: 768px) {
+    padding-top: 4rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 2rem;
+  }
   &__wrap {
     display: flex;
     align-items: center;
