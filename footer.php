@@ -12,22 +12,17 @@
 
 ?>
 
-<!--</?php $addTitle = get_field('main_footer', 'option')['address_title'] ?>
-</?php $address =  get_field('full_address', 'option') ?>
-</?php $phone = get_field('phone_number', 'option') ?>
-</?php $email = get_field('email', 'option') ?>
-</?php $fullName =  get_field('full_company_name', 'option') ?>
-</?php $shortName =  get_field('short_company_name', 'option') ?>
-</?php $vat = get_field('vat', 'option') ?>
-</?php $partnerUrl = get_field('partner_url', 'option') ?>
-</?php $partnerLogo = get_field('parnter_logo', 'option') ?>-->
 <?php
+$footer = get_field('footer', 'option');
+$email = $footer['email'];
+$phone_number = $footer['phone_number'];
+$phone_number_2 = $footer['phone_number_2'];
+
 $title_1 = get_field('title_1', 'option');
 $title_2 = get_field('title_2', 'option');
 $title_3 = get_field('title_3', 'option');
 $title_4 = get_field('title_4', 'option');
 $title_5 = get_field('title_5', 'option');
-$email = get_field('email', 'option');
 $copyright = get_field('copyright', 'option');
 $home_intro = get_field('home_intro');
 $items = $home_intro['items'];
@@ -125,13 +120,14 @@ $logo = $header['logo'];
         </h4>
         <div class="main-footer__list">
           <li>
-            <a href="#">hello@example.com</a>
+            <a href="mailto:<?php echo $email ?>" target="_blank"><?php echo $email; ?></a>
           </li>
           <li>
-            <a href="#">(405) 555-0128</a>
+            
+            <a href="tel:<?php echo clear_phone($phone_number) ?>" target="_blank"><?php echo $phone_number ?></a>
           </li>
           <li>
-            <a href="#">(252) 555-0126</a>
+            <a href="tel:<?php echo clear_phone($phone_number_2) ?>" target="_blank"><?php echo $phone_number_2 ?></a>
           </li>
         </div>
       </div>
@@ -156,7 +152,7 @@ $logo = $header['logo'];
       </div>
     </div>
     <div class="main-footer__copyright">
-      <span>Copyright &copy; Night Trips 2019. All rights reserved.</span>
+      <span>Copyright &copy; Night Trips <?php echo date('Y'); ?>. All rights reserved.</span>
     </div>
 
     <div class="logo">
