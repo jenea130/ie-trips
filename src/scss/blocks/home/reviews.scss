@@ -42,23 +42,46 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--text-primary);
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1.6rem;
+    }
   }
   &__wrap {
-    margin-bottom: 15rem;
     display: flex;
     justify-content: center;
     gap: 2.4rem;
     flex-wrap: wrap;
+    max-width: 104.4rem;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+      max-width: 80%;
+      margin-bottom: 12rem;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: initial;
+      margin-bottom: 10rem;
+    }
   }
   &__item {
     padding: 7.5rem 7.5rem 7.5rem 10.2rem;
-    width: 51rem;
+    flex: 0 0 48%;
     box-shadow: 0 20px 30px 0 rgba(0, 201, 224, 0.03);
     background: #02223b;
     cursor: pointer;
     transition: background 0.4s ease;
     &:hover {
       background: #183948;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 2.4rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 6.5rem 3.5rem 6.5rem 7.2rem;
     }
   }
   &__text {

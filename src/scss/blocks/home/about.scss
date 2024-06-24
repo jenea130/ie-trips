@@ -6,6 +6,9 @@
   @media screen and (max-width: 992px) {
     padding-top: 8rem;
   }
+  @media screen and (max-width: 576px) {
+    padding-bottom: 18rem;
+  }
   &__wrap {
     position: relative;
     display: flex;
