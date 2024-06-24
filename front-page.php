@@ -15,6 +15,7 @@ $background = $fon['background'];
   <div class="container">
     <?php get_template_part('template-parts/home/adventure'); ?>
     <?php get_template_part('template-parts/home/about'); ?>
+    <?php get_template_part('template-parts/home/reviews'); ?>
   </div>
 </div>
 

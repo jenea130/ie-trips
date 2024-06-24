@@ -1,0 +1,110 @@
+.reviews {
+  border: 1px solid red;
+  padding-top: 10rem;
+  padding-bottom: 13.7rem;
+  position: relative;
+  background: #011627;
+  z-index: 2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 80px;
+    z-index: 3;
+    background: linear-gradient(180deg, #09f4f4 0%, #00c9e0 100%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 80px;
+    z-index: 3;
+    background: linear-gradient(180deg, #09f4f4 0%, #00c9e0 100%);
+  }
+  &__header {
+    margin-bottom: 7.3rem;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 3.1rem;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+  }
+  &__wrap {
+    margin-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+  }
+  &__item {
+    padding: 7.5rem 7.5rem 7.5rem 10.2rem;
+    width: 51rem;
+    box-shadow: 0 20px 30px 0 rgba(0, 201, 224, 0.03);
+    background: #02223b;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    &:hover {
+      background: #183948;
+    }
+  }
+  &__text {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.9;
+    color: var(--text-primary);
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__cite {
+    position: absolute;
+    top: 0;
+    left: -5rem;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+  &__body {
+  }
+  &__name,
+  &__job {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+  }
+  &__footer {
+    text-align: center;
+  }
+  &__title-end {
+    margin-bottom: 3.1rem;
+  }
+  &__desc {
+    margin: 0 auto;
+    max-width: 40rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.07em;
+    color: var(--text-primary);
+  }
+}
