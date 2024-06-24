@@ -1,6 +1,7 @@
 .reviews {
   padding-top: 10rem;
-  padding-bottom: 17.7rem;
+  padding-bottom: 13.7rem;
+  margin-bottom: 13.7rem;
   position: relative;
   background: #011627;
   border-radius: 8px;
@@ -19,7 +20,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     width: 2px;

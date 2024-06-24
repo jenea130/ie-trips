@@ -42,7 +42,9 @@ if (!function_exists('ar_starter_setup')) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__('Primary', 'bs-vite'),
+				'footer-1' => esc_html__('Footer-1', 'ie-trips'),
+				'footer-2' => esc_html__('Footer-2', 'ie-trips'),
+				'footer-3' => esc_html__('Footer-3', 'ie-trips'),
 			)
 		);
 
