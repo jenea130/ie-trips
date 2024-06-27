@@ -25,7 +25,10 @@ body {
   font-weight: 400;
   color: var(--text-primary);
   background: #011627;
-    
+
+  &.lock {
+    overflow: hidden;
+  }
 
   &::after {
     content: "";
@@ -39,10 +42,10 @@ body {
     z-index: 1000;
   }
 
-  .lock & {
-    overflow: hidden;
-    touch-action: none;
-  }
+  // .lock & {
+  //   overflow: hidden;
+  //   touch-action: none;
+  // }
 }
 
 *,
@@ -69,7 +72,8 @@ img {
   vertical-align: top;
 }
 
-ul,li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -121,12 +125,12 @@ button::-moz-focus-inner {
   overflow: hidden;
 
   // Прижимаем footer
-  >main {
+  > main {
     flex: 1 1 auto;
   }
 
   // Фикс для слайдеров
-  >* {
+  > * {
     min-width: 0;
   }
 }

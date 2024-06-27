@@ -6,7 +6,7 @@ $items = $about['items'];
 $button_text = $about['button_text'];
 ?>
 
-<div class="about">
+<div class="about" id="about">
   <div class="about__wrap">
     <div class="about__content">
       <h2 class="about__title title"><?php echo $title ?></h2>
